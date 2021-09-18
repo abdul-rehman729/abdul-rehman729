@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="ticTacBody">
+    <div class="ticTacToe">
+
+        <div id="playerOne" class="playersWon">
+            <div class="playerOne">
+                <img src="images/congrats.png" alt="congrats">
+                <div class="txt">
+                    <h1>Player One is Won</h1>
+                    <h5>Restarting...</h5>
+                </div>
+            </div>
+        </div>
+
+        <div id="playerTwo" class="playersWon">
+            <div class="playerOne">
+                <img src="images/congrats.png" alt="congrats">
+                <div class="txt">
+                    <h1>Player Two is Won</h1>
+                    <h5>Restarting...</h5>
+                </div>
+            </div>
+        </div>
+        
+        <div id="playersBtn" class="playersBtn">
+            <button id="p1" class="">P1 <i class="fas fa-check"></i></button>
+            <button id="p2">P2 <i class="fas fa-times"></i></button>
+        </div>
+
+        <div class="ticTacInputs">
+            <div>
+                <button id="zero">
+                    <i data-attr="check" class="fas"></i>
+                </button>
+    
+                <button id="one">
+                    <i data-attr="check" class="fas"></i>
+                </button>
+    
+                <button id="two">
+                    <i data-attr="check" class="fas"></i>
+                </button>
+            </div>
+    
+            <div>
+                <button id="three">
+                    <i data-attr="check" class="fas"></i>
+                </button>
+    
+                <button id="four">
+                    <i data-attr="check" class="fas"></i>
+                </button>
+    
+                <button id="five">
+                    <i data-attr="check" class="fas"></i>
+                </button>
+            </div>
+    
+            <div>
+                <button id="six">
+                    <i data-attr="check" class="fas"></i>
+                </button>
+    
+                <button id="seven">
+                    <i data-attr="check" class="fas"></i>
+                </button>
+    
+                <button id="eight">
+                    <i data-attr="check" class="fas"></i>
+                </button>
+            </div>
+        </div>
+    
+        <a href="tictactoe.html" class="startGame"><button>Restart The Game</button></a>
+
+        <div id="error" class="error">
+            <i class="fas fa-info-circle"></i>
+            <p>Please select the player</p>
+        </div>
+
+        <section><p>flana</p></section>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

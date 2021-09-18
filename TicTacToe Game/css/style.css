@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    background: #8d73dd;
+    font-family: 'Ubuntu';
+}
+
+.ticTacToe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    margin: 0;
+    border-radius: 0px;
+    border: 1px solid;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.ticTacInputs {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 40px auto;
+}
+
+.ticTacInputs div {
+    display: flex;
+}
+
+.ticTacInputs div button {
+    margin: 0;
+    background: transparent;
+    border: 3px solid #fff;
+    color: #000;
+    height: 83px;
+    width: 123px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.ticTacInputs div button i {
+    display: none;
+}
+
+.ticTacInputs div:first-child button:first-child {
+    border: none;
+}
+
+.ticTacInputs div:first-child button:nth-child(2n) {
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.ticTacInputs div:first-child button:last-child {
+    border: none;
+}
+
+.ticTacInputs div:nth-child(2) button:first-child {
+    border-left: none;
+    border-right: none;
+}
+
+.ticTacInputs div:nth-child(2) button:last-child {
+    border-left: none;
+    border-right: none;
+}
+
+.ticTacInputs div:last-child button:first-child {
+    border: none;
+}
+
+.ticTacInputs div:last-child button:nth-child(2) {
+    border-top: none;
+    border-bottom: none;
+}
+
+.ticTacInputs div:last-child button:last-child {
+    border: none;
+}
+
+.startGame{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.startGame button {
+    border: none;
+    background-color: #fff;
+    padding: 13px 22px;
+    color: #fff;
+    font-weight: 600;
+    width: fit-content;
+    display: flex;
+    margin: 0px auto 0px auto;
+    cursor: pointer;
+    color: #8d73dd;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px #fff;
+}
+
+.playersBtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.playersBtn button {
+    border: none;
+    background-color: #fff;
+    padding: 13px 22px;
+    font-weight: 600;
+    display: flex;
+    margin: 10px;
+    width: 26%;
+    justify-content: center;
+    border-radius: 30px;
+    color: #8d73dd;
+    box-shadow: 0 0 10px 1px #fff;
+}
+
+.playersBtn button i{
+    margin: auto 0 auto 10px;
+}
+
+.playersBtn button.active {
+    opacity: 0.5;
+}
+
+.error{
+    display: none;
+    color: #8d73dd;
+    margin: 10px auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 40px;
+    background: #fff;
+    border-radius: 30px;
+    width: 40%;
+    justify-content: center;
+}
+
+.error p{
+    margin: 0;
+}
+
+.error i{
+    margin: auto 10px auto 0px;
+}
+
+.playersWon {
+    padding: 20px 40px;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    box-shadow: 0 0 10px 1px #fff;
+    transition: 1s all;
+    display: none;
+}
+
+.playersWon .playerOne{
+    display: flex;
+}
+
+.playersWon .playerOne img{
+    width: 24%;
+    object-fit: contain;
+    margin: auto 40px auto 0px;
+}
+
+.playersWon .playerOne .txt{
+    margin: auto 0;
+}
+
+.playersWon .playerOne .txt h1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.playersWon .playerOne .txt h5{
+    margin: 0;
+}
