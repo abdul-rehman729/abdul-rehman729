@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <!-- JS MediaTags -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+    </head>
+    <!-- <body onload="animate_string('songName')"> -->
+    <body>
+        <section class="playerBody">
+            <div class="playerBox">
+                <p class="playerName">Audio Player</p>
+                <div class="musicImage">
+                    <img src="images/musicImage.jpg" alt="musicImage">
+                </div>
+                <marquee id="songName"></marquee>
+                <p id="playInfo">Paused</p>
+
+                <div class="rangeBox">
+                    <input type="range" id="musicRange" class="musicRange" min="1" max="100">
+                    <span id="currentTime" class="currentTimeTxt">00:00</span>
+                    <span id="totalTime" class="endingTime">00:00</span>
+                </div>
+
+                <div class="musicController">
+                    <div onclick="musicLoop()" class="musicLooper">
+                        <i id="shuffleIt" class="fas fa-random current"></i>
+                        <i id="repeatPlaylist" class="fas fa-repeat"></i>
+                        <i id="repeatIt" class="fas fa-redo"></i>
+                    </div>
+
+                    <div id="loopAlerts" class="loopAlerts">
+                        <p id="shuffleAlert" class="">Playback is shuffled</p>
+                        <p id="repeatListAlert">Current playlist is looped</p>
+                        <p id="repeatItAlert">Current song is looped</p>
+                    </div>
+
+                    <div class="playController">
+                        <i id="previousSong" class="fas fa-step-backward"></i>
+                        <div onclick="playButton()" id="playButton" class="playButton">
+                            <i id="playIt" class="fas fa-play current"></i>
+                            <i id="pauseIt" class="fas fa-pause"></i>
+                        </div>
+                        <i id="nextSong" class="fas fa-step-forward"></i>
+                    </div>
+
+                    <div class="playList">
+                        <i class="fas fa-stream"></i>
+                    </div>
+
+                    <audio onclick="checkPlay()" id="audioPlayer" preload="metadata" loop controls src="music/firestone.mp3"></audio>
+                </div>
+            </div>
+        </section>
+        <script src="js/main.js"></script>
+    </body>
+</html>
